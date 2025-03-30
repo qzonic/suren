@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "shares-backend"
+version = "0.1.0"
+description = ""
+authors = ["qzonic <lazzytoo@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.115.11"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.39"}
+alembic = "^1.15.1"
+asyncpg = "^0.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
